@@ -10,5 +10,5 @@ package parcial2;
  * @author estudiante103
  */
 public class Criatura {
-    
+    hfjfhffhfhfhfhff
 }
