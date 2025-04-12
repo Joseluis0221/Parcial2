@@ -12,4 +12,4 @@ package parcial2;
 public class Volador {
     void volar();
     void aterrizar();
-}
+ }
