@@ -11,5 +11,7 @@ package parcial2;
  * @author estudiante103
  */
 public class Mago {
+    void lazarHechizo(Criatura objetivo);
+    void aprenderHechizo(String hechizo);
     
 }
