@@ -9,6 +9,28 @@ package parcial2;
  *
  * @author estudiante103
  */
-public class Dragon {
+public class Dragon extends Criatura implements Volador {
+
+    public Dragon(String nombre, int salud, int fuerza){
+        super(nombre, salud, fuerza);
+        
+    }
+    
+    public void volar() [] {}
+    public void aterrizar() {}
+    
+    public void atacar(Criatura objetivo){
+        int daño = fuerza * 2;
+        if (arma ! = null){
+        daño + = arma.atacarConArma();
+    }
+        objetivo.defender(daño);
+      }
+    
+    public void defender(int daño) {
+    salud - = daño;
+    if (salud < 0) salud = 0;
+    
+  }
     
 }
