@@ -10,28 +10,41 @@ package parcial2;
  * @author estudiante103
  */
 public class Dragon extends Criatura implements Volador {
+    private Arma arma;
 
-    public Dragon(String nombre, int salud, int fuerza){
+    public Dragon(String nombre, int salud, int fuerza) {
         super(nombre, salud, fuerza);
-        
     }
-    
-    public void volar() {}
-   
-    public void aterrizar() {}
-    
-    public void atacar(Criatura objetivo){
+
+    public void equiparArma(Arma arma) {
+        this.arma = arma;
+    }
+
+    public void desequiparArma() {
+        this.arma = null;
+    }
+
+    @Override
+    public void atacar(Criatura objetivo) {
         int daño = fuerza * 2;
-        if (arma ! = null){
-        daño + = arma.atacarConArma();
-    }
+        if (arma != null) {
+            daño += arma.atacarConArma();
+        }
         objetivo.defender(daño);
-      }
-    
+    }
+
+    @Override
     public void defender(int daño) {
-    salud - = daño;
-    if (salud < 0) salud = 0;
-    
-  }
-    
+        salud -= daño;
+    }
+
+    @Override
+    public void volar() {
+        System.out.println(nombre + " está volando.");
+    }
+
+    @Override
+    public void aterrizar() {
+        System.out.println(nombre + " ha aterrizado.");
+    }
 }
