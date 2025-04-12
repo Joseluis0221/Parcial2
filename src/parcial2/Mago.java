@@ -10,7 +10,7 @@ package parcial2;
  *
  * @author estudiante103
  */
-public class Mago {
+public interface Mago {
     void lazarHechizo(Criatura objetivo);
     void aprenderHechizo(String hechizo);
     

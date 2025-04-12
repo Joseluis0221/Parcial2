@@ -9,7 +9,7 @@ package parcial2;
  *
  * @author estudiante103
  */
-public class Volador {
+public interface Volador {
     void volar();
     void aterrizar();
  }

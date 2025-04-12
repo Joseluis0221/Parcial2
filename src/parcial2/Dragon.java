@@ -16,7 +16,8 @@ public class Dragon extends Criatura implements Volador {
         
     }
     
-    public void volar() [] {}
+    public void volar() {}
+   
     public void aterrizar() {}
     
     public void atacar(Criatura objetivo){
