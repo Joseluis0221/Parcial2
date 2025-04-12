@@ -14,9 +14,9 @@ public class Main {
         Arma espada = new Arma("Espada legendaria", 10);
         Arma baston = new Arma("Bastón mágico", 8);
 
-        Dragon dragon = new Dragon("Smaug", 100, 20);
-        Mago mago = new Mago("Gandalf", 80, 15);
-        Guerrero guerrero = new Guerrero("Conan", 120, 18);
+        Dragon dragon = new Dragon("Draco", 100, 20);
+        Mago mago = new Mago("Merlin", 80, 15);
+        Guerrero guerrero = new Guerrero("Akiles", 120, 18);
 
         dragon.equiparArma(new Arma("Fuego del dragón", 12));
         mago.equiparArma(baston);
