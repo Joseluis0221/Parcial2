@@ -26,3 +26,4 @@ public class Arma {
                 return dañoAdicional;
             }
 }
+hola hola hola hola hola
