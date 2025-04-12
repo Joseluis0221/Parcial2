@@ -15,13 +15,13 @@ public class Parcial2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Arma espada = new Arma("Espada Legendaria", 10);
+        Arma espada = new Arma("Espada Legendaria", 11);
         Arma baston = new Arma("Bastón Mágico", 8);
         Arma fuegoDragon = new Arma("Fuego del Dragón", 12);
 
         Dragon dragon = new Dragon("Smaug", 100, 20);
         Mago mago = new Mago("Gandalf", 80, 15);
-        Guerrero guerrero = new Guerrero("Conan", 120, 18);
+        Guerrero guerrero = new Guerrero("Conan", 120, 19);
 
         dragon.equiparArma(fuegoDragon);
         mago.equiparArma(baston);
