@@ -9,8 +9,9 @@ package parcial2;
  *
  * @author usuario
  */
-interface Magico {
+interface Magico{
     
 void lanzarHechizo(Criatura objetivo);
-    void aprenderHechizo(String hechizo);
+   void aprenderHechizo(String hechizo);
 }
+
